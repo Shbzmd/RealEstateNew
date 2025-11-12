@@ -1,5 +1,6 @@
 import React from "react";
 import Contentstack from "contentstack";
+import Navbar from "../components/Navbar";
 
 // Initialize your Contentstack stack
 const Stack = Contentstack.Stack({

@@ -19,22 +19,30 @@ export default function Navbar() {
   }}
 >
   {/* LEFT: Logo */}
-  <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-    <img
-      src="/RealEstate.png"  // ✅ exact file name in /public
-      alt="Real Estate Logo"
-      style={{
-        height: "45px",
-        width: "auto",
-        background: "white", // 👈 temporary to make it visible
-        borderRadius: "8px",
-        padding: "4px",
-      }}
-    />
-    <span style={{ fontSize: "1.4rem", fontWeight: "600", color: "#fff" }}>
-      finder<span style={{ fontWeight: "400" }}>land</span>
-    </span>
-  </div>
+  <div style={{ display: "flex", alignItems: "center", gap: "1.2rem" }}>
+  <img
+    src="/RealEstate.png"      // ✅ Correct file name
+    alt="RealEstate Logo"
+    style={{
+      height: "90px",          // ⬆️ Larger logo
+      width: "auto",
+      objectFit: "contain",
+      display: "block",
+      transform: "scale(1.8)", // 🔍 Makes logo visually bigger if PNG has padding
+      transformOrigin: "left center",
+    }}
+  />
+  <span
+    style={{
+      fontSize: "2rem",        // ⬆️ Larger text
+      fontWeight: "700",
+      color: "#fff",
+      letterSpacing: "0.8px",
+    }}
+  >
+  </span>
+</div>
+
 
 
       {/* CENTER: Menu */}
