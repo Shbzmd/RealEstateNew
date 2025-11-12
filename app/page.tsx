@@ -28,6 +28,9 @@ export default async function Home() {
 
   return (
     <div>
+      {/* 👇 Navbar Added Here */}
+      <Navbar />
+
       {/* 🏠 HERO SECTION */}
       <section
         style={{
